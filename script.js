@@ -16,21 +16,25 @@ form.addEventListener('submit', (event) => {
         console.log(data);
 
         const resultDiv = document.getElementById('resultDiv');
-        const ul = document.createElement('ul');
+        resultDiv.innerHTML = '';
 
         data.docs.forEach((item) => {
             const card = document.createElement('div');
             card.classList.add('card');
-                    
+
             const titleElement = document.createElement('h2');
             titleElement.textContent = item.title;
-                    
+
             const authorElement = document.createElement('p');
             authorElement.textContent = `Author: ${item.author_name}`;
-                    
+
+            const imageElement = document.createElement('img');
+            imageElement.src = `https://covers.openlibrary.org/b/id/${item.cover_i}-L.jpg`
+
             card.appendChild(titleElement);
             card.appendChild(authorElement);
-                    
+            card.appendChild(imageElement);
+
             resultDiv.appendChild(card);
 
         });
