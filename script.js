@@ -7,5 +7,7 @@ form.addEventListener('submit', (event) => {
     const searchQuery = document.getElementById('searchQuery').value;
     const plusQuery = searchQuery.split(' ').join('+');
     console.log("plusQuery:", plusQuery);
+
+    const apiUrl = `https://openlibrary.org/search.json?q=${plusQuery}`;
 });
 
