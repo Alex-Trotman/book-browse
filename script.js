@@ -29,7 +29,7 @@ form.addEventListener('submit', (event) => {
             authorElement.textContent = `Author: ${item.author_name}`;
 
             const imageElement = document.createElement('img');
-            imageElement.src = `https://covers.openlibrary.org/b/id/${item.cover_i}-L.jpg`
+            imageElement.src = `https://covers.openlibrary.org/b/id/${item.cover_i}-M.jpg`
 
             card.appendChild(titleElement);
             card.appendChild(authorElement);

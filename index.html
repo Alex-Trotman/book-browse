@@ -11,6 +11,15 @@
         <form id="form-element" action="#" method="GET">
             <label for="searchQuery">Search Books:</label>
             <input type="text" id="searchQuery" name="searchQuery" placeholder="Enter a book title">
+            <br>
+            <label for="searchCategory">Filter type</label>
+            <select id="searchCategory">
+                <option value="all">Default Search</option>
+                <option value="authors">Authors</option>
+                <option value="books">Books</option>
+                <option value="subjects">Subjects</option>
+            </select>
+            <br>
             <input type="submit" value="Search">
         <br>
     </form>
