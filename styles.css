@@ -1,3 +1,35 @@
+.header .header-1 {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo i {
+  font-size: 28px;
+}
+
+.logo i span {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
 .card {
-    border: 2px solid red;
+  border: 2px solid red;
+}
+
+#sumbit-button {
+  background-color: grey;
+  border-radius: 10px;
+  padding: 10px;
 }

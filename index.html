@@ -3,34 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>Project Title</title>
   </head>
   <body>
-    <nav id="navigation">
-      <div>
-        <form id="form-element" action="#" method="GET">
-          <label for="searchQuery">Search Books:</label>
-          <input
-            type="text"
-            id="searchQuery"
-            name="searchQuery"
-            placeholder="Enter a book title"
-          />
-          <br />
-          <label for="searchCategory">Filter type</label>
-          <select id="searchCategory">
-            <option value="all">Default Search</option>
-            <option value="authors">Authors</option>
-            <option value="books">Books</option>
-            <option value="subjects">Subjects</option>
-          </select>
-          <br />
-          <input type="submit" value="Search" />
-          <br />
-        </form>
+    <header class="header">
+      <div class="header-1">
+        <a href="" class="logo"
+          ><i class="ri-book-open-fill"><span>Bookie</span></i></a
+        >
+        <nav id="navigation">
+          <div>
+            <form id="form-element" action="#" method="GET">
+              <!-- <label for="searchQuery">Search Books:</label> -->
+              <select id="searchCategory">
+                <option value="all">Default Search</option>
+                <option value="authors">Authors</option>
+                <option value="books">Books</option>
+                <option value="subjects">Subjects</option>
+              </select>
+              <input
+                type="search"
+                id="searchQuery"
+                name="searchQuery"
+                placeholder="Enter a book title"
+              />
+              <!-- <label for="searchCategory">Filter type</label> -->
+              <input id="sumbit-button" type="submit" value="Search" />
+            </form>
+          </div>
+        </nav>
+
+        <div class="social-links">
+          <a href=""><i class="ri-github-fill"></i></a>
+        </div>
       </div>
-    </nav>
+    </header>
+
     <div id="resultDiv"></div>
     <script src="script.js"></script>
   </body>
