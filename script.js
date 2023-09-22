@@ -30,12 +30,15 @@ form.addEventListener("submit", (event) => {
 
         const imageElement = document.createElement("img");
         imageElement.src = `https://covers.openlibrary.org/b/id/${item.cover_i}-M.jpg`;
+        console.log(imageElement.src)
 
         card.appendChild(titleElement);
         card.appendChild(authorElement);
         card.appendChild(imageElement);
 
-        resultDiv.appendChild(card);
+        if (item.cover_i !== undefined){
+          resultDiv.appendChild(card);
+        }
       });
     })
     .catch((error) => {
