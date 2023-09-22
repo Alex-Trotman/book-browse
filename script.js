@@ -2,11 +2,9 @@ const form = document.getElementById("form-element");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  console.log("Submit button clicked");
 
   const searchQuery = document.getElementById("searchQuery").value;
   const plusQuery = searchQuery.split(" ").join("+");
-  console.log("plusQuery:", plusQuery);
 
   const apiUrl = `https://openlibrary.org/search.json?q=${plusQuery}`;
 
@@ -30,7 +28,6 @@ form.addEventListener("submit", (event) => {
 
         const imageElement = document.createElement("img");
         imageElement.src = `https://covers.openlibrary.org/b/id/${item.cover_i}-M.jpg`;
-        console.log(imageElement.src)
 
         card.appendChild(titleElement);
         card.appendChild(authorElement);
