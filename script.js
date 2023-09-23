@@ -33,7 +33,7 @@ form.addEventListener("submit", (event) => {
         card.appendChild(authorElement);
         card.appendChild(imageElement);
 
-        if (item.cover_i !== undefined){
+        if (item.cover_i !== undefined) {
           resultDiv.appendChild(card);
         }
       });
