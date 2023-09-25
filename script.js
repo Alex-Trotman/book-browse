@@ -26,11 +26,18 @@ form.addEventListener("submit", (event) => {
         const authorElement = document.createElement("p");
         authorElement.textContent = `Author: ${item.author_name}`;
 
+        const numberOfPagesElement = document.createElement("p");
+        numberOfPagesElement.textContent = `Pages: ${item.number_of_pages_median}`;
+
         const imageElement = document.createElement("img");
         imageElement.src = `https://covers.openlibrary.org/b/id/${item.cover_i}-M.jpg`;
 
         card.appendChild(titleElement);
         card.appendChild(authorElement);
+
+        if (item.number_of_pages_median !== undefined) {
+          card.appendChild(numberOfPagesElement);
+        }
         card.appendChild(imageElement);
 
         if (item.cover_i !== undefined) {

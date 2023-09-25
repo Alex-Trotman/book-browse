@@ -39,6 +39,7 @@
 .logo i span {
   font-size: 1.7rem;
   font-weight: 600;
+  margin-left: 10px;
 }
 
 .card {
@@ -76,21 +77,11 @@
   border: 2px solid black;
 }
 
-/* #resultDiv {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-} */
-
 #resultDiv {
-  display: grid; /* Change display property to grid */
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(250px, 1fr)
-  ); /* Create a grid with columns that adjust to the available space */
-  gap: 20px; /* Add some gap between grid items */
-  justify-items: center; /* Center items horizontally within the grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
 }
 
 .social-links a {
