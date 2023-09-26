@@ -77,6 +77,10 @@
   border: 2px solid black;
 }
 
+#sumbit-button:hover {
+  background-color: rgb(205,205,205);
+}
+
 #resultDiv {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -86,4 +90,8 @@
 
 .social-links a {
   font-size: 25px;
+}
+
+.focus {
+  background-color: rgb(205,205,205);
 }

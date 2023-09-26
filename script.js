@@ -43,6 +43,14 @@ form.addEventListener("submit", (event) => {
         if (item.cover_i !== undefined) {
           resultDiv.appendChild(card);
         }
+
+        card.addEventListener('mouseover', () => {
+          card.classList.add('focus');
+        })
+
+        card.addEventListener('mouseout', () => {
+          card.classList.remove('focus')
+        })
       });
     })
     .catch((error) => {
