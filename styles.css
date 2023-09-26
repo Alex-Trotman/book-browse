@@ -51,9 +51,14 @@
   background-color: #fff;
 }
 
-.card h2 {
+.card a {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.card a:hover {
+  color: red;
 }
 
 .card p {

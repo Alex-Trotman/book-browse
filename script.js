@@ -20,8 +20,19 @@ form.addEventListener("submit", (event) => {
         const card = document.createElement("div");
         card.classList.add("card");
 
-        const titleElement = document.createElement("h2");
+        const titleElement = document.createElement("a");
         titleElement.textContent = item.title;
+
+        // Google search link test
+        const itemTitle = item.title
+        const itemTitleSplit = itemTitle.split(' ')
+        const itemTitleJoin = itemTitleSplit.join('+')
+        const googleSearch = `https://www.google.com/search?q=${itemTitleJoin}`
+        console.log(googleSearch)
+        // Google search link end
+        titleElement.href = googleSearch
+        titleElement.target = '_BLANK'
+
 
         const authorElement = document.createElement("p");
         authorElement.textContent = `Author: ${item.author_name}`;
