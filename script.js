@@ -1,11 +1,17 @@
+// Get the form element by its ID
 const form = document.getElementById("form-element");
 
+// Add a submit event listener to the form
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
+   // Get the value of the search query input field
   const searchQuery = document.getElementById("searchQuery").value;
+
+   // Replace spaces in the search query with '+'
   const plusQuery = searchQuery.split(" ").join("+");
 
+   // Construct the API URL with the modified search query
   const apiUrl = `https://openlibrary.org/search.json?q=${plusQuery}`;
 
   fetch(apiUrl)
