@@ -41,8 +41,6 @@ form.addEventListener("submit", (event) => {
         const itemTitleSplit = itemTitle.split(' ')
         const itemTitleJoin = itemTitleSplit.join('+')
         const googleSearch = `https://www.google.com/search?q=${itemTitleJoin}`
-        console.log(googleSearch)
-        // Google search link end
         titleElement.href = googleSearch
         titleElement.target = '_BLANK'
 
