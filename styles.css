@@ -75,14 +75,14 @@
   border-radius: 5px;
 }
 
-#sumbit-button {
+#submit-button {
   border-radius: 1.2rem;
   padding: 10px;
   width: auto;
   border: 2px solid black;
 }
 
-#sumbit-button:hover {
+#submit-button:hover {
   background-color: rgb(205,205,205);
 }
 
