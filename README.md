@@ -1,5 +1,5 @@
 # BookBrowse - Your Literary Search Companion
-
+[Live demo](https://alex-trotman.github.io/phase-1-project/)
 Welcome to BookBrowse, your go-to web app for discovering books and authors. Whether you're an avid reader or just curious, BookBrowse makes exploring the literary world a breeze.
 
 ## Table of Contents
